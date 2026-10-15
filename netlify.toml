@@ -1,0 +1,24 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/menu"
+  to = "/.netlify/functions/menu"
+  status = 200
+
+[[redirects]]
+  from = "/api/orders"
+  to = "/.netlify/functions/orders"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin-login"
+  to = "/.netlify/functions/admin-login"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin-menu"
+  to = "/.netlify/functions/admin-menu"
+  status = 200
+
